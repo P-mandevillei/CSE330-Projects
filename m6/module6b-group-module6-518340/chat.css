@@ -1,0 +1,133 @@
+body {
+	background-color: rgba(0, 128, 128, 0.454);
+	margin: 20px auto;
+	padding: 2em;
+	font: 12px/16px Verdana, sans-serif;
+}
+
+.showAfterSignIn {
+    display: none;
+}
+
+.showAfterEnteringRoom {
+    display: none;
+}
+
+.selectable:hover {
+    cursor: pointer;
+}
+
+.dialog {
+    display: none;
+}
+
+.selectable {
+    color: rgb(186, 12, 47);
+    text-decoration: underline;
+}
+
+#kickoutMsg {
+    display: none;
+    background-color: rgb(186, 12, 47);
+}
+
+input[type='submit'] {
+    background-color: rgb(186, 12, 47);
+    color: white;
+    border-radius: 0.4em;
+    border: 1px solid red;
+    font: 12px/16px Verdana, sans-serif;
+    cursor: pointer;
+    padding: 0.5em 0.7em;
+}
+
+button {
+    background-color: rgb(186, 12, 47);
+    color: white;
+    border-radius: 0.4em;
+    border: 1px solid red;
+    font: 12px/16px Verdana, sans-serif;
+    cursor: pointer;
+    padding: 0.5em 0.7em;
+}
+
+select {
+    background-color: rgb(186, 12, 47);
+    color: white;
+    border-radius: 0.4em;
+    border: 1px solid red;
+    font: 12px/16px Verdana, sans-serif;
+    cursor: pointer;
+    padding: 0.5em 0.7em;
+}
+
+.handle {
+    display: none;
+}
+
+#msgReceiver {
+    display: none;
+}
+
+#roomPassword {
+    display: none;
+}
+
+#nickname {
+    margin: auto;
+    padding: 2em;
+    text-align: center;
+    text-shadow: 0.05em 0.05em gold;
+}
+
+#welcome {
+    text-align: center;
+    font: 20px/24px Verdana, sans-serif;
+    font-weight: bold;
+    color: purple;
+    margin: 0.5em;
+}
+
+label {
+    font-weight: bold;
+}
+
+input:not([type="submit"]) {
+    padding: 0.3em;
+    border-radius: 5px;
+    border: 0;
+}
+
+.roomIdHeader {
+    text-align: center;
+    font: 20px/24px Verdana, sans-serif;
+    padding: 0.4em;
+}
+
+.roomnameHeader {
+    text-align: center;
+    color: grey;
+}
+
+label[for="ownerFilterBtn"] {
+    color: rgb(21, 0, 255)
+}
+
+#userOptionsTitle {
+    display: block;
+    padding: 0.4em;
+}
+
+#obscenityFilterSpan {
+    display: block;
+    padding: 0.4em;
+    text-align: center;
+}
+
+.msg_username {
+    color: grey;
+}
+
+.msg_content {
+    padding: 0.25em;
+}

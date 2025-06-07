@@ -1,0 +1,74 @@
+body {
+	width: 850px;
+	background-color: rgba(0, 128, 128, 0.454);
+	margin: 0 auto;
+	padding: 0;
+	font: 12px/16px Verdana, sans-serif;
+}
+
+#welcome {
+    padding: 2em 2em 0 2em;
+    text-align: center;
+    font: 40px/44px Verdana, sans-serif;
+    color: purple;
+    text-shadow: 0.05em 0.05em gold;
+}
+
+.post_block {
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.title {
+    text-align: center;
+    font: 16px/20px Verdana, sans-serif;
+}
+
+.post_info {
+    text-align: right;
+    color: rgba(126, 126, 126, 0.884);
+    font: 8px/12px Verdana, sans-serif;
+}
+
+input[type='submit'] {
+    cursor: pointer;
+    background-color: aqua;
+    color: purple;
+    border-radius: 10px;
+}
+
+form {
+    display: inline;
+}
+
+#signin_button {
+    text-align: center;
+    margin: 1em auto 3em auto;
+}
+
+#post_button {
+    text-align: center;
+    margin: 2em auto 2em auto;
+}
+
+input[name='title'] {
+    height: 2em;
+    width: 650px;
+    background-color: white;
+    text-align: center;
+    color: black;
+}
+
+input[name='link'] {
+    width: 35em;
+    height: 1.5em;
+    background-color: white;
+}
+
+div#signout_button {
+    display: inline;
+}
+
+div#search_button {
+    float: right;    
+}

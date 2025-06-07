@@ -1,0 +1,79 @@
+body {
+	width: 850px;
+	background-color: rgba(0, 128, 128, 0.454);
+	margin: 0 auto;
+	padding: 0;
+	font: 12px/16px Verdana, sans-serif;
+}
+
+img {
+    width: 760px;
+}
+
+#title {
+    text-align: center;
+    color: purple;
+    text-shadow: 0.05em 0.05em gold;
+}
+
+#post_info {
+    text-align: center;
+    color: rgba(126, 126, 126, 0.884);
+    font: 8px/12px Verdana, sans-serif;
+}
+
+#body {
+    text-align: center;
+    font: 15px/18px Verdana, sans-serif;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    max-width: 850px;
+    overflow: hidden;
+}
+
+#link {
+    text-align: right;
+    font: 8px/12px Verdana, sans-serif;
+}
+
+.reply {
+    text-align: left;
+	margin: 0 2px 0 100px; 
+    padding: 1em;
+	border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.comment {
+    text-align: left;
+    margin: 2px; 
+    padding: 1em;
+	border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.comment_signature {
+    text-align: right;
+    color: rgba(126, 126, 126, 0.884);
+    font: 8px/12px Verdana, sans-serif;
+}
+
+.comment_content {
+    text-align: center;
+    color: black;
+}
+
+input[type='submit'] {
+    cursor: pointer;
+    background-color: aqua;
+    color: purple;
+    border-radius: 10px;
+}
+
+form {
+    display: inline;
+}
+
+div#post_area {
+    text-align: center;
+}

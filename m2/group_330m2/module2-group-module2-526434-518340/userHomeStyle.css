@@ -1,0 +1,79 @@
+/* body{
+    /* background-image: url("background.webp");
+    
+    background-position: center; 
+} */
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    /* z-index: 1; */
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.right {
+    background-image: url("background.webp");
+    background-position: center;
+    right: 0;
+    /* background-color: #000000; */
+}
+
+.left {
+    background-image: url("background.webp");
+    background-position: center;
+    left: 0;
+    /* background-color: #A2D8F9; */
+}
+
+.file_display {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: #A2D8F9; 
+}
+
+.upload_button {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+input[value="Upload File"], input[value="Sign Out"], input[value="Delete Account"] {
+    color: #000000;
+    border-radius: 4px;
+    background-color: #A2D8F9;
+    font-size: 16px;
+    border: 2px solid transparent;
+}
+
+input[type="file"] {
+    color: #A2D8F9;
+    font-size: 16px;
+}
+
+.sign_out {
+    position: absolute;
+    top: 5%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    text-align: right;
+
+}
+
+label {
+    font-size: 180%;
+    color: #A2D8F9;
+    font-weight: bold;
+}
+
+input[type="submit"]{
+    background-color: transparent;
+    color: #A2D8F9;
+}

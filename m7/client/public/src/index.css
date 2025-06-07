@@ -1,0 +1,20 @@
+body {
+  margin: 2em;
+  padding: 2em;
+}
+
+.center {
+  text-align: center;
+}
+
+.warning {
+  color: red;
+}
+
+.center {
+  margin: auto;
+}
+
+.greyify {
+  color: rgba(128, 128, 128, 0.9);
+}

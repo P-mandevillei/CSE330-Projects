@@ -1,0 +1,41 @@
+body{
+    background-color: #000000;
+    text-align: center;
+}
+
+header{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #0A9FD6;
+    font-size: 135%;
+    font-weight: bold;
+}
+
+form{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+label {
+    color: #0A9FD6;
+    font-size: 140%;
+}
+
+img{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10%;
+    margin-bottom: 15px;
+}
+
+input[type=submit]{
+    background-color: #0A9FD6;
+    border-radius: 8px;
+    font-size: 16px;
+}

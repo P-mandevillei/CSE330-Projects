@@ -1,0 +1,29 @@
+body{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #000000;
+}
+header{
+    font-size: 250%;
+    color: #0A9FD6;
+    font-weight: bold; 
+    text-shadow: 3px 3px 3px #43829E;
+}
+.signup{
+    font-size: 135%;
+    color: #0A9FD6;
+}
+
+input[type=submit]{
+    background-color: #0A9FD6;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+img{
+    width: 25%;
+    margin-bottom: 15px;
+}

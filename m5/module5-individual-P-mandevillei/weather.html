@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://classes.engineering.wustl.edu/cse330/content/weather.css">
+    
+    <script>
+        function fetchWeather() {
+            fetch("https://classes.engineering.wustl.edu/cse330/content/weather_json.php")
+            .then(response => response.json())
+            .then((weather) => {
+                let locNode = document.getElementsByClassName("weather-loc")[0];
+                locNode.innerHTML = "";
+                let cityNode = document.createElement("strong");
+                cityNode.textContent = weather.location.city;
+                locNode.appendChild(cityNode);
+                locNode.appendChild(document.createTextNode(" "+weather.location.state));
+
+                let humidityNode = document.getElementsByClassName("weather-humidity")[0];
+                humidityNode.innerHTML = "";
+                humidityNode.textContent = weather.atmosphere.humidity;
+
+                let tempNode = document.getElementsByClassName("weather-temp")[0];
+                tempNode.innerHTML = "";
+                tempNode.textContent = weather.current.temp;
+
+                let tomorrowCode = weather.tomorrow.code;
+                document.getElementsByClassName("weather-tomorrow")[0].setAttribute(
+                    "src", `http://us.yimg.com/i/us/nws/weather/gr/${tomorrowCode}ds.png`);
+                document.getElementsByClassName("weather-tomorrow")[0].setAttribute("alt", "weather icon for tomorrow");
+
+                let dayafterCode = weather.dayafter.code;
+                document.getElementsByClassName("weather-dayaftertomorrow")[0].setAttribute(
+                    "src", `http://us.yimg.com/i/us/nws/weather/gr/${dayafterCode}ds.png`);
+                document.getElementsByClassName("weather-dayaftertomorrow")[0].setAttribute("alt", "weather icon for the day after tomorrow");
+            })
+            .catch(e => console.log(e));
+        }
+        
+        document.addEventListener("DOMContentLoaded", fetchWeather, false);
+        document.addEventListener("DOMContentLoaded", 
+            ()=>document.getElementById("update").addEventListener("click", (e)=>{
+                    e?.preventDefault();
+                    fetchWeather();
+                }, false
+            ), false);
+    </script>
+
+</head>
+<body>
+    <div class="weather" id="weatherWidget">
+        <div class="weather-loc"></div>
+        <div class="weather-humidity"></div>
+        <div class="weather-temp"></div>
+        <img class="weather-tomorrow" src="loading.png" alt="weather tomorrow">
+        <img class="weather-dayaftertomorrow" src="loading.png" alt="weather the day after tomorrow">
+    </div>
+    <button id="update">Update</button>
+</body>
+</html>

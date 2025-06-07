@@ -1,0 +1,15 @@
+body {
+	width: 850px;
+	background-color: rgba(0, 128, 128, 0.454);
+	margin: 0 auto;
+	padding: 0;
+	font: 12px/16px Verdana, sans-serif;
+}
+
+.message {
+    padding: 2em;
+    text-align: center;
+    font: 40px/44px Verdana, sans-serif;
+    color: grey;
+    text-shadow: 0.05em 0.05em black;
+}

@@ -1,0 +1,65 @@
+body {
+    background-color: aqua;
+}
+
+div.page1 {
+    width: 1000px;
+    height: 520px;
+    margin: 0;
+    background-image: url("images/red_heart.png");
+}
+
+p#hbd{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blueviolet;
+    font-size: 70px;
+    height: 80px;
+    text-shadow: 0.05em 0.05em aqua;
+}
+
+img.bouquet {
+    width: 150px;
+}
+
+figure.bouquet {
+    width: 1000px;
+    height: 150px;
+    margin: auto;
+}
+
+figure.bouquet:first-child {
+    padding: 0;
+}
+
+figure.bouquet:last-child {
+    padding: 0 850px;
+}
+
+figure#left {
+    float: left;
+    margin: 80px 30px;
+}
+
+img#sam_molecule {
+    height: 200px;
+}
+
+img#sam_headshot {
+    height: 400px;
+}
+
+figcaption#cap1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+    height: 20px;
+    text-align: center;
+    color: magenta;
+    text-shadow: 0.05em 0.05em gold;
+}
+
+div.page2 {
+    width: 800px;
+    height: 400px;
+    margin: auto;
+}

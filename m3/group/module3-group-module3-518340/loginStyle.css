@@ -1,0 +1,46 @@
+body {
+	width: 850px;
+	background-color: rgba(0, 128, 128, 0.454);
+	margin: 0 auto;
+	padding: 0;
+	font: 12px/16px Verdana, sans-serif;
+}
+
+#welcome {
+    padding: 2em;
+    text-align: center;
+    font: 40px/44px Verdana, sans-serif;
+    color: purple;
+    text-shadow: 0.05em 0.05em gold;
+}
+
+#signin {
+    text-align: center;
+}
+
+.signin#signin_word {
+    color: black;
+    font: 24px/28px Verdana, sans-serif;
+    padding: 0.5em;
+}
+
+input[type='submit'] {
+    cursor: pointer;
+    background-color: aqua;
+    color: purple;
+    border-radius: 10px;
+    height: 2em;
+}
+
+input[name='username'] {
+    width: 15em;
+}
+
+input[name='password'] {
+    width: 15em;
+}
+
+#signup {
+    text-align: center;
+    margin: 0 0 10em 0;
+}
