@@ -1,0 +1,28 @@
+{
+	"dependencies": {
+		"bcrypt": "^5.1.1",
+		"browserify": "^17.0.1",
+		"express": "^4.21.2",
+		"mime": "~2.4.6",
+		"obscenity": "^0.4.3",
+		"socket.io": "^4.8.1"
+	},
+	"name": "module6b-group-module6-518340",
+	"version": "1.0.0",
+	"description": "[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/KFh9-ZY6)\r # CSE330\r REPLACE-THIS-TEXT-WITH-YOUR-NAME-STUDENT-ID-AND-GITHUB-USERNAME",
+	"main": "server.js",
+	"type": "module",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/cse330-spring-2025/module6b-group-module6-518340.git"
+	},
+	"author": "Charlie Li",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/cse330-spring-2025/module6b-group-module6-518340/issues"
+	},
+	"homepage": "https://github.com/cse330-spring-2025/module6b-group-module6-518340#readme"
+}

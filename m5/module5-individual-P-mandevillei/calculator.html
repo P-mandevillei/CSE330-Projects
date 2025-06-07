@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <p>
+        <label for="num1">Input first number here: <input id='num1' type='number'> </label>
+        <label for="num2">Input second number here: <input id="num2" type='number'> </label>
+    </p>
+    <div id="radioButtons">
+        Select your operation here:
+        <input type='radio' name='operator' value='1' id='addition'> <label for="addition">+</label> 
+        <input type='radio' name='operator' value='2' id='subtraction'> <label for="subtraction">-</label>
+        <input type='radio' name='operator' value='3' id='multiplication'> <label for="multiplication">&times;</label>
+        <input type='radio' name='operator' value='4' id='division'> <label for="division">&divide;</label>
+    </div>
+
+    <div id="result">Please Complete Your Input</div>
+
+    <script>
+        const ADD = '1';
+        const SUBTRACT = '2';
+        const MULTIPLY = '3';
+        const DIVIDE = '4';
+
+        function calculate(e) {
+            e?.preventDefault();
+
+            let resultNode = document.getElementById("result");
+            const num1 = parseFloat(document.getElementById("num1").value);
+            const num2 = parseFloat(document.getElementById("num2").value);
+            const radioNodes = document.getElementsByName('operator');
+            let anyChecked = false;
+            for (let radioNode of radioNodes) {
+                if (radioNode.checked) {
+                    anyChecked = radioNode.value;
+                    break;
+                }
+            }
+            
+            if (Number.isNaN(num1) || Number.isNaN(num2) || anyChecked===false) {
+                resultNode.innerText = "Invalid Input";
+                return;
+            }
+
+            if (num2===0 && anyChecked===DIVIDE) {
+                resultNode.innerText = "Error: Cannot Divide By Zero";
+                return;
+            }
+            
+            switch (anyChecked) {
+                case ADD:
+                    resultNode.innerText = `${num1} + ${num2} = ${(num1 + num2).toFixed(2)}`;
+                    return;
+                case SUBTRACT:
+                    resultNode.innerText = `${num1} - ${num2} = ${(num1 - num2).toFixed(2)}`;
+                    return;
+                case MULTIPLY:
+                    resultNode.innerText = `${num1} * ${num2} = ${(num1 * num2).toFixed(2)}`;
+                    return;
+                case DIVIDE:
+                    resultNode.innerText = `${num1} / ${num2} = ${(num1 / num2).toFixed(2)}`;
+                    return;
+                default:
+                    resultNode.innerText = "Please Choose A Supported Computation Type";
+                    return;
+            }            
+        }
+
+        document.getElementById("radioButtons").addEventListener("change", e => calculate(e), false);
+        document.getElementById("num1").addEventListener("change", e => calculate(e), false);
+        document.getElementById('num2').addEventListener('change', e => calculate(e), false);
+        
+    </script>
+
+</body>
+</html>
