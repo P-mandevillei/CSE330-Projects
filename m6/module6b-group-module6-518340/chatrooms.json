@@ -1,1 +1,0 @@
-{"chatrooms":[{"type":"public","roomname":"Hi's room","username":"Hi","id":0,"users":["Hi"],"banned_users":[],"filter":false,"password":false},{"type":"private","roomname":"TestRoom","username":"user1","password":"$2b$12$mlfw1ueNUW7Sark70fnGXOkW.ew3NfkF1uIS4ryANNVmOAH30L2hK","id":1,"users":[],"banned_users":["Hi"],"filter":false}]}

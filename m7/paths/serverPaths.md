@@ -1,1 +1,0 @@
-[paths.py](../server/src/paths.py)
