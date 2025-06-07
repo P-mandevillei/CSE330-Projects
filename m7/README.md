@@ -24,3 +24,7 @@ Project idea: Petition and specimen reporting website for Okeeheelee Park South,
 - Reports are displayed for the administrator as cards of pictures with submission time and geolocation.
 - Administrator can add species identification to reports
 - Creative portion: validate/devalidate species id and deletion, filter by type
+
+
+<br><br>
+[back](../README.md)

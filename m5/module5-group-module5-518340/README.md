@@ -23,3 +23,8 @@ Log in credentials:
    - Email should look like this in Gmail:
    ![Screenshot 2025-03-12 153722](https://github.com/user-attachments/assets/78fda455-d0bf-4edd-8b12-089e8c96ad9a)
    - *Note*: inline CSS is used in the preparation of the email body. It is the only way to override the default styles in the email.
+
+
+
+<br><br>
+[back](../README.md)

@@ -19,3 +19,7 @@ This project includes code from the "Obscenity" npm package.
 - Licensed under MIT (included under ./obscenity-license/LICENSE.md).
 
 This message is generated with the help of ChatGPT.
+
+
+<br><br>
+[back](../README.md)
